@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import About from "./components/About/About";
+// import Home from "./components/Home/Home";
+// import Header from "./components/Header";
+import { BrowserRouter, Route, Routes, Router, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from "./asserts/logoNew.png";
+import Slider from "./components/Home/Slider";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <div className="main_logo">
+          <img src={logo} alt="Logo Here" className="logo" />
+          <nav>
+            <ul>
+              <li>
+                <Link to={"/slider"}> Home </Link>
+              </li>
+              <li>
+                <Link to={"/about"}>About</Link>
+              </li>
+            </ul>
+            <Outlet />
+          </nav>
+        </div>
+        {/* <hr /> */}
+        <Routes>
+          <Route exact path="/slider" element={<Slider />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+
+      {/* 
+      <div>
+      <Slider></Slider>
+      </div> */}
+    </>
   );
 }
 
