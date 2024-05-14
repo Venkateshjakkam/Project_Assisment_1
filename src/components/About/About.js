@@ -63,14 +63,14 @@ function About() {
             Contact Us
           </button>
 
-          <div className="modelimg1">
-            <img src={side_img2} alt="About_page1" />
-          </div>
-
-          <div className="modelimg2">
-            <img src={side_img3} alt="About-page2" />
-          </div>
+        <div>
+          <img src={side_img2} alt="About_page1" />
         </div>
+
+        <div>
+          <img src={side_img3} alt="About-page2" />
+        </div>
+      </div>
       </div>
 
       <div className="main-container">
