@@ -1,0 +1,18 @@
+
+.maindiv{
+    background-color: rgb(0, 0, 0);
+}
+.main1{
+    float: left;
+    color: azure;
+    margin-left: 120px;
+}
+.main2{
+    float: right;
+    color: azure;
+ margin-right: 150px;  
+ margin-top: 70px; 
+}
+.div3{
+    clear: both;
+}

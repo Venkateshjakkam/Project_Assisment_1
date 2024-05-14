@@ -1,0 +1,90 @@
+.maindiv{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(27, 27, 28, 0.9),rgba(54, 54, 54, 0.9)), url('https://downtowncoders.com/assets/images/testimonial_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  
+}
+
+header {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.0rem;
+    align-items: center;
+  }
+  
+  header img {
+    width: 3rem;
+    object-fit: contain;
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #48d9f3;
+  }
+  
+  header p {
+    margin: 0;
+    color: #82c2ce;
+  }
+  
+  #tabs {
+    max-width: 32rem;
+    margin: 2rem 0;
+    overflow: hidden;
+  }
+  
+  #tabs menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.25rem;
+  }
+  
+  #tabs button {
+    font: inherit;
+    font-size: 0.85rem;
+    background-color: #c4e5f8;
+    border: none;
+    border-bottom-color: #48d9f3;
+    color: #e0eff1;
+    border-radius: 40px 40px 40px 40px;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+  }
+  
+  #tabs button:hover,
+  #tabs button.active {
+    background-color: #48d9f3;
+    color: #273133;
+  }
+  
+  #tab-content {
+    background-color: #2d3942;
+    border-radius: 0 4px 4px 4px;
+    padding: 1rem;
+    list-style-type: none;
+  }
+  
+  #tab-content li {
+    margin: 0.75rem 0;
+    list-style-type: none;
+    border-radius: 15px;
+    margin-left: 9px;
+  }
+
+  .leftdiv{
+    float: left;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 30px;
+  }
+  .rightdiv{
+    float: right;
+    margin-top: 80px;
+    margin-right: 100px;
+  }
+

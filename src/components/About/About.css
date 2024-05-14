@@ -61,3 +61,14 @@ p{
     align-items: center;
     justify-content: center;
 }
+.modleButton{
+    position: relative;
+    top:10px;
+}
+.modelimg1{
+    position: absolute;
+}
+.modelimg2{
+    position: absolute;
+    right: 60%;
+}
